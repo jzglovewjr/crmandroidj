@@ -29,7 +29,7 @@ public class TabbarActivity extends BaseActivity implements View.OnClickListener
 
         SharedPreferences sharedPreferences = BaseApplication.getSharedPreferences();
         SharedPreferences.Editor editor = sharedPreferences.edit();
-        editor.putString(PCH.userLoginCookieKey, "f26bf1fc7f9640fe8c8fa7926aebb414");
+        editor.putString(PCH.userLoginCookieKey, "password");
         editor.apply();
 
 
@@ -38,8 +38,8 @@ public class TabbarActivity extends BaseActivity implements View.OnClickListener
          * 首页显示的东西在TabbarActivity已经初始化完成，这里可以什么都不做 😂
          */
         HashMap<String,Object> para = new HashMap<>();
-        para.put("username","minyang");
-        para.put("password","123456");
+        para.put("username","username");
+        para.put("password","password");
         NetWorkTool.request(PCH.requestLoginAction, para, PCH.mHttpRequestPost, new MyCallBack<BaseDao>() {
 
             @Override

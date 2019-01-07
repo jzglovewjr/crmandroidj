@@ -12,12 +12,12 @@ public class PCH {
     public static final String mHttpRequestPost = "mHttpRequestPost"; //post网络请求
 
 
-    public static final String BASE_URL = "http://47.93.31.175:8189/spoc-crm";
+    public static final String BASE_URL = "nizjijidedizhi";
 
-    public static final String requestLoginAction = BASE_URL + "/a/ws/sys/login"; //登陆
-    public static final String requestUserInfoDataAction = BASE_URL + "/a/ws/sys/user/userInfoData"; //获取个人信息
-    public static final String requestPubListPageAction = BASE_URL + "/a/ws/crm/crmCustomerPub/listPage"; //公共库列表
-    public static final String requestMessageListAction = BASE_URL + "/a/ws/sys/sysNotification/listUserNotify?menuId=801&method=app";//消息列表
+    public static final String requestLoginAction = BASE_URL + "nizjijidedizhi"; //登陆
+    public static final String requestUserInfoDataAction = BASE_URL + "nizjijidedizhi"; //获取个人信息
+    public static final String requestPubListPageAction = BASE_URL + "nizjijidedizhi"; //公共库列表
+    public static final String requestMessageListAction = BASE_URL + "/nizjijidedizhi";//消息列表
 
 
 
