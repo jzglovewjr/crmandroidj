@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".message.fragment.MessageFragment">
+
+
+
+
+    <!--头部搜索框-->
+
+
+    <RelativeLayout
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="-10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#ffffff">
+
+        <EditText
+            android:id="@+id/messageSearchEditText"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:hint="搜索"
+            android:textCursorDrawable="@drawable/my_cursor"
+            android:textColorHint="#999999"
+            android:textSize="15sp"
+            android:textColor="#666666"
+            android:textAlignment="center"
+            android:background="#e6e6e6"
+            android:lineHeight="0dp"
+            />
+
+    </RelativeLayout>
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:paddingTop="10dp"-->
+        <!--android:paddingBottom="10dp"-->
+        <!--android:paddingLeft="15dp"-->
+        <!--android:paddingRight="15dp"-->
+        <!--android:background="#ffffff">-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/messageSearchEditText"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:hint="搜索"-->
+            <!--android:textAlignment="center"-->
+            <!--/>-->
+
+    <!--</View>-->
+
+
+    <!--消息模块列表的上拉和下拉-->
+    <com.liaoinstan.springview.widget.SpringView
+        android:id="@+id/springView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp">
+
+        <!--消息模块的列表数据-->
+        <ListView
+            android:id="@+id/messageListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#00000000"/>
+
+    </com.liaoinstan.springview.widget.SpringView>
+
+
+
+    <!--上拉下拉listview-->
+    <!--<com.wuxiaolong.pullloadmorerecyclerview.PullLoadMoreRecyclerView-->
+        <!--android:id="@+id/pullLoadMoreRecycleView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--/>-->
+
+
+</FrameLayout>

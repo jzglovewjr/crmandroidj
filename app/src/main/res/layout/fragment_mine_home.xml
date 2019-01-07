@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFF3F6"
+    tools:context=".mine.fragment.MineFragment">
+
+
+    <!--android:divider="#ffffff" 分割线颜色设置为""为不显示分割线-->
+    <!--android:dividerHeight="0dp" 分割线宽度-->
+    <ListView
+        android:id="@+id/mineListView"
+        android:divider="#00000000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</FrameLayout>

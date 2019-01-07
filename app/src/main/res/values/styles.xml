@@ -1,0 +1,24 @@
+<resources>
+
+
+
+    <!--
+        colorPrimaryDark 状态栏颜色
+        colorAccent 控制各个控件被选中的颜色
+        android:windowBackground 页面背景色
+        android:navigationBarColor 底部导航栏颜色
+        android:colorPrimary Appbar背景色
+        android:textColorPrimary ToolBar上的Title颜色
+        android:colorControlNormal 各个控制控件的默认颜色
+    -->
+
+    <!-- Base application theme. DarkActionBar是有导航栏的 NoActionBar是没有导航栏的-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+</resources>

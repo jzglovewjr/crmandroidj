@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color> <!--008577  statusbar背景设置为透明 使得statusbar和navigationbar连为一体-->
+    <color name="colorPrimaryDark">#00574B</color> <!--00574B -->
+    <color name="colorAccent">#D81B60</color>
+    <color name="bottom_text_selected">#44BCB7</color>
+    <color name="bottom_text_unselected">#999999</color>
+    <color name="clear_color">#00000000</color>
+</resources>

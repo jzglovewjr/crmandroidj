@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".base.activity.BaseActivity"
+    android:id="@+id/main_root_layout"
+    >
+
+
+
+    <include
+        layout="@layout/top_navigation_bar"
+        />
+
+
+    <!--android:layout_alignParentBottom="true"-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragment_container"
+        android:layout_below="@+id/navigationBarBackView"
+        android:layout_above="@+id/bottomBarLayout"
+        android:layout_alignWithParentIfMissing="true"
+        android:background="#EFF3F6"
+        />
+
+
+
+    <!--tabbar布局-->
+    <RelativeLayout
+        android:id="@+id/bottomBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+    >
+
+        <!--tabbar上边的分割线-->
+        <View
+        android:id="@+id/bottomTopLineView"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#C7C7C7"
+        />
+
+        <com.example.jizhigang.crm_android_j.base.widge.BottomBar
+        android:id="@+id/bottomBar"
+        android:layout_below="@+id/bottomTopLineView"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#ffffffff"
+        android:layout_gravity="bottom"
+        />
+
+    </RelativeLayout>
+
+</RelativeLayout>

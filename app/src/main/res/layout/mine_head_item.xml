@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="#EFF3F6"
+    android:paddingTop="10dp"
+    android:paddingBottom="20dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <!--白色内容区域-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+
+
+        <TextView
+        android:id="@+id/headerNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:textSize="23sp"
+        android:text="张菁"
+        android:textColor="#333333"
+        />
+
+
+
+            <TextView
+                android:id="@+id/typeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:textSize="12sp"
+                android:textColor="#826858"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="15dp"
+                android:text="在线接单"
+                />
+
+
+            <ImageView
+                android:id="@+id/typeImageView"
+                android:layout_height="16dp"
+                android:layout_width="16dp"
+                android:padding="3dp"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@+id/typeTextView"
+                android:layout_alignTop="@+id/typeTextView"
+                android:src="@mipmap/tm_mine_jiedan"
+                />
+
+
+
+        <ImageView
+            android:id="@+id/rightImageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/tm_zhanwei"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="#EFF3F6"-->
+    <!--&gt;-->
+
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/mineHeadWhiteLayout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:layout_marginLeft="15dp"-->
+        <!--android:layout_marginBottom="30dp"-->
+        <!--android:layout_marginRight="15dp"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:background="#ffffff"-->
+        <!--&gt;-->
+
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/headerNameTextView"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="15dp"-->
+                <!--android:layout_marginTop="15dp"-->
+                <!--android:textSize="18sp"-->
+                <!--android:text="张菁"-->
+                <!--android:textColor="#333333"-->
+                <!--/>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_marginTop="30dp"-->
+                <!--android:layout_marginLeft="15dp"-->
+                <!--&gt;-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/typeTextView"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textSize="10sp"-->
+                    <!--android:textColor="#826858"-->
+                    <!--android:text="在线接单"-->
+                    <!--&gt;-->
+
+
+                <!--</TextView>-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/typeImageView"-->
+                    <!--android:layout_height="10dp"-->
+                    <!--android:layout_width="10dp"/>-->
+
+            <!--</LinearLayout>-->
+
+            <!---->
+            <!--<ImageView-->
+                <!--android:id="@+id/userImg"-->
+                <!--android:layout_width="40dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--/>-->
+            <!---->
+        <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+
+<!--</LinearLayout>-->

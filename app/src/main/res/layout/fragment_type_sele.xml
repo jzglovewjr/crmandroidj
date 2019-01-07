@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/status_back_img"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/navigationBarBackView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#00000000"
+        >
+
+
+        <!--填充状态栏背景部分 默认和navigationbar连为一体 所以设置为透明色-->
+        <View
+            android:id="@+id/navigationBarTopClearView"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#00000000"
+            />
+
+
+        <!--layout_marginTop的值设置为和statusBar高度一致 默认为20dp-->
+        <RelativeLayout
+            android:id="@+id/navigationBar"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_below="@+id/navigationBarTopClearView"
+            android:layout_above="@+id/nav_bottom_line"
+            android:background="#00000000"
+            >
+
+            <!--标题-->
+            <TextView
+                android:id="@+id/nav_text_title"
+                android:text="标题"
+                android:textSize="18dp"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:layout_width="100dp"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"
+                android:background="#00000000"/>
+
+            <!--返回按钮-->
+            <Button
+                android:id="@+id/button_backward"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:drawableLeft="@mipmap/tm_nav_back"
+                android:drawablePadding="6dp"
+                android:layout_marginLeft="15dp"
+                android:background="#00000000"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                android:visibility="invisible" />
+
+            <!--右侧按钮-->
+            <Button
+                android:id="@+id/button_forward"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:drawablePadding="6dp"
+                android:background="#00000000"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:text="搜索"
+                android:textColor="#ffffffff"
+                android:textSize="15dp"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <!--导航栏底部分割线-->
+        <View
+            android:id="@+id/nav_bottom_line"
+            android:layout_height="1px"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:background="#00000000"/>
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>
+
+

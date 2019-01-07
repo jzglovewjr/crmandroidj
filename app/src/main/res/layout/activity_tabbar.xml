@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".customer.activity.CustomerDetailActivity">
+
+</android.support.constraint.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+
+<!--<RelativeLayout-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="#ffffff"-->
+    <!--tools:context=".base.activity.TabbarActivity"-->
+    <!--android:id="@+id/main_root_layout"-->
+    <!--&gt;-->
+
+    <!--<include-->
+        <!--layout="@layout/top_navigation_bar"/>-->
+
+    <!--&lt;!&ndash;中间内容显示区域 android:layout_below="@+id/navigationBarBackView"&ndash;&gt;-->
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/contentViewLayout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="#ffffff"-->
+        <!--android:layout_below="@+id/navigationBarBackView"-->
+        <!--android:layout_above="@+id/bottomBarLayout"-->
+        <!--android:layout_alignWithParentIfMissing="true"-->
+        <!--&gt;-->
+
+
+        <!--<com.example.jizhigang.crm_android_j.base.widge.CustomerViewPager-->
+            <!--android:id="@+id/viewPager"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--&gt;-->
+        <!--</com.example.jizhigang.crm_android_j.base.widge.CustomerViewPager>-->
+
+    <!--</RelativeLayout>-->
+
+
+
+
+
+    <!--&lt;!&ndash;tabbar布局&ndash;&gt;-->
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/bottomBarLayout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--&gt;-->
+
+
+        <!--&lt;!&ndash;tabbar上边的分割线&ndash;&gt;-->
+        <!--<View-->
+            <!--android:id="@+id/bottomTopLineView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1px"-->
+            <!--android:background="#C7C7C7"-->
+            <!--/>-->
+
+        <!--<com.example.jizhigang.crm_android_j.base.widge.BottomBar-->
+            <!--android:id="@+id/bottomBar"-->
+            <!--android:layout_below="@+id/bottomTopLineView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="48dp"-->
+            <!--android:background="#ffffffff"-->
+            <!--android:layout_gravity="bottom"-->
+            <!--/>-->
+
+    <!--</RelativeLayout>-->
+
+
+
+
+
+
+
+<!--</RelativeLayout>-->

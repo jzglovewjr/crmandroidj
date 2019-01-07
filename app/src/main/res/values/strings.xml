@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">客户管理</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello Customer fragment</string>
+    <!--网络请求时需要区分get请求还是post请求-->
+    <string name="mHttpRequestGet">mHttpRequestGet</string>
+    <!--网络请求时需要区分get请求还是post请求-->
+    <string name="mHttpRequestPost">mHttpRequestPost</string>
+</resources>
