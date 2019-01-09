@@ -1,6 +1,7 @@
 package com.example.jizhigang.crm_android_j.customer.fragment;
 
 import android.app.Activity;
+import android.app.TabActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -18,10 +19,18 @@ import android.widget.ListView;
 
 import com.example.jizhigang.crm_android_j.R;
 import com.example.jizhigang.crm_android_j.base.activity.TabbarActivity;
+import com.example.jizhigang.crm_android_j.base.dao.BaseDao;
 import com.example.jizhigang.crm_android_j.customer.activity.CustomerDetailActivity;
+import com.example.jizhigang.crm_android_j.network.MyCallBack;
+import com.example.jizhigang.crm_android_j.network.NetWorkTool;
+import com.example.jizhigang.crm_android_j.network.PCH;
 import com.liaoinstan.springview.container.DefaultFooter;
 import com.liaoinstan.springview.container.DefaultHeader;
 import com.liaoinstan.springview.widget.SpringView;
+
+import java.io.IOException;
+
+import okhttp3.Response;
 
 
 public class CustomerFragment extends Fragment implements View.OnClickListener {
@@ -75,14 +84,36 @@ public class CustomerFragment extends Fragment implements View.OnClickListener {
         springView.setListener(new SpringView.OnFreshListener() {
             @Override
             public void onRefresh() { //下拉
+
+//                ((TabbarActivity)getContext()).showLoadingView(true);
+
+
+                NetWorkTool.request("http://www.baidu.com", null, PCH.mHttpRequestPost, (TabbarActivity) getContext(), true, new MyCallBack<BaseDao>() {
+                    @Override
+                    public void onSuccess( BaseDao baseDao, String responseString, Response response ) {
+
+                    }
+
+                    @Override
+                    public void onError( String errString, IOException e ) {
+
+                    }
+                });
+
+
+
+
+
+
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
                         num = 5;
                         adapter.notifyDataSetChanged();
                         springView.onFinishFreshAndLoad();
+//                        ((TabbarActivity)getContext()).showLoadingView(false);
                     }
-                },1000);
+                },1);
             }
 
             @Override

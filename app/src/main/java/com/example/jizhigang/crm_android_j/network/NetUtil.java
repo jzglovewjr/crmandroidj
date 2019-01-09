@@ -2,6 +2,7 @@ package com.example.jizhigang.crm_android_j.network;
 
 import android.util.Log;
 
+import com.example.jizhigang.crm_android_j.base.widge.JUtil;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonDeserializationContext;
@@ -41,8 +42,9 @@ public class NetUtil {
     }
 
 
-    private static Gson buildGson(){
+    public static Gson buildGson(){
         Gson gson = new GsonBuilder()
+                .setPrettyPrinting()
                 .setDateFormat("yyyy-MM-dd HH:mm:ss")
                 .registerTypeAdapter(Integer.class, new IntegerDefault0Adapter())
                 .registerTypeAdapter(int.class, new IntegerDefault0Adapter())

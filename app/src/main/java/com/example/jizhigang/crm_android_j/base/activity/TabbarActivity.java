@@ -7,6 +7,7 @@ import android.view.View;
 import com.example.jizhigang.crm_android_j.base.BaseApplication;
 import com.example.jizhigang.crm_android_j.base.dao.BaseDao;
 import com.example.jizhigang.crm_android_j.base.fragment.TabbarFragment;
+import com.example.jizhigang.crm_android_j.mine.activity.TongjiActivity;
 import com.example.jizhigang.crm_android_j.network.MyCallBack;
 import com.example.jizhigang.crm_android_j.network.NetWorkTool;
 import com.example.jizhigang.crm_android_j.network.PCH;
@@ -27,9 +28,12 @@ public class TabbarActivity extends BaseActivity implements View.OnClickListener
         setContentFragment(new TabbarFragment()); //给内容显示区域赋值
 
 
+
+        Log.d("getClass().getName()",getClass().getName());
+
         SharedPreferences sharedPreferences = BaseApplication.getSharedPreferences();
         SharedPreferences.Editor editor = sharedPreferences.edit();
-        editor.putString(PCH.userLoginCookieKey, "password");
+        editor.putString(PCH.userLoginCookieKey, "f26bf1fc7f9640fe8c8fa7926aebb414");
         editor.apply();
 
 
@@ -38,31 +42,22 @@ public class TabbarActivity extends BaseActivity implements View.OnClickListener
          * 首页显示的东西在TabbarActivity已经初始化完成，这里可以什么都不做 😂
          */
         HashMap<String,Object> para = new HashMap<>();
-        para.put("username","username");
-        para.put("password","password");
-        NetWorkTool.request(PCH.requestLoginAction, para, PCH.mHttpRequestPost, new MyCallBack<BaseDao>() {
+        para.put("username","minyang");
+        para.put("password","123456");
 
-            @Override
-            public void onSuccess( BaseDao baseDao, String responseString, Response response ) {
-
-
-//                Gson gson = new Gson();
-//                HashMap<String,String> obj = gson.fromJson(responseString,(new HashMap<String,Object>()).getClass());
-//                String string = obj.get("data").toString();
-
-                Log.d("网络请求成功",responseString);
-//                SharedPreferences sharedPreferences = getSharedPreferences(PCH.userLoginCookieKey,Context.MODE_PRIVATE);
-//                SharedPreferences.Editor editor = sharedPreferences.edit();
-//                editor.putString(PCH.userLoginCookieKey, "f26bf1fc7f9640fe8c8fa7926aebb414");
-//                editor.apply();
-            }
-
-            @Override
-            public void onError( String errString, IOException e ) {
-                Log.d("网络请求失败",errString);
-            }
-
-        });
+//        NetWorkTool.request(PCH.requestLoginAction, para, PCH.mHttpRequestPost, new MyCallBack<BaseDao>() {
+//
+//            @Override
+//            public void onSuccess( BaseDao baseDao, String responseString, Response response ) {
+//                Log.d("网络请求成功",responseString);
+//            }
+//
+//            @Override
+//            public void onError( String errString, IOException e ) {
+//                Log.d("网络请求失败",errString)
+//                ;
+//            }
+//        });
 
 
     }

@@ -158,7 +158,6 @@ public class NetWorkManager {
                     .add("os","ios")
                     .add("appname","crm")
                     .add("version","2.9.1")
-                    .add("Content-Type","")
                     .add("Content-Type","application/json;charset=UTF-8")
                     .build();
         }

@@ -1,6 +1,7 @@
 package com.example.jizhigang.crm_android_j.mine.activity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 import com.example.jizhigang.crm_android_j.base.activity.BaseActivity;
@@ -13,6 +14,7 @@ public class TongjiActivity extends BaseActivity {
 //        setContentView(R.layout.activity_tongji);
         initData();
         createUI();
+        Log.d("getClass().getName()",getClass().getName());
     }
 
     private void initData(){

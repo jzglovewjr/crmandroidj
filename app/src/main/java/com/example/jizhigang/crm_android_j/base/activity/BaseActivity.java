@@ -1,5 +1,7 @@
 package com.example.jizhigang.crm_android_j.base.activity;
 
+import android.os.Handler;
+import android.os.Message;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -48,6 +50,35 @@ public class BaseActivity extends AppCompatActivity implements View.OnClickListe
     //tabbar
     private BottomBar bottomBar;
 
+    private Handler loadingHandler;
+
+    private RelativeLayout mRelativeLayoutLoading;
+
+
+    /**
+     * 显示和隐藏loadingView
+     * @param isShow true显示loading false隐藏loadingview
+     */
+    public void showLoadingView(boolean isShow){
+        if (isShow){ //显示loading
+            loadingHandler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    mRelativeLayoutLoading.bringToFront();
+                    mRelativeLayoutLoading.setVisibility(View.VISIBLE);
+                }
+            },1);
+        }else {//隐藏laoding
+            loadingHandler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    mRelativeLayoutLoading.bringToFront();
+                    mRelativeLayoutLoading.setVisibility(View.GONE);
+                }
+            },1);
+        }
+    }
+
 
     @Override
     protected void onCreate( Bundle savedInstanceState ) {
@@ -55,7 +86,7 @@ public class BaseActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_base);
         initViews();
         initStatusBar();
-
+        Log.d("getClass().getName()",getClass().getName());
 
     }
 
@@ -103,7 +134,16 @@ public class BaseActivity extends AppCompatActivity implements View.OnClickListe
         //tabbar
         bottomBar = (BottomBar)findViewById(R.id.bottomBar);
         isShowTabbar(false); //默认隐藏tabbar只有首页需要手动显示出来
+
+        //loading
+        mRelativeLayoutLoading = (RelativeLayout)findViewById(R.id.rl_progress_bar);
+
+        //更新loading状态
+        loadingHandler = new Handler();
     }
+
+
+
 
 
     /**

@@ -67,27 +67,6 @@ public class MessageListDao extends BaseDao {
             this.list.addAll(list);
         }
 
-//        public int getPageSize() {
-//            return pageSize;
-//        }
-//
-//        public int getPageNo() {
-//            return pageNo;
-//        }
-//
-//        public List<ListData> getList() {
-//            return list;
-//        }
-//
-//        public int getCount() {
-//            return count;
-//        }
-//
-//        public int getPageCount() {
-//            return pageCount;
-//        }
-
-
         /**
          * list中的数据
          */
@@ -101,21 +80,21 @@ public class MessageListDao extends BaseDao {
             private String showTime  =  ""; /** 消息发送时间 处理之后的 显示这个*/
 
             //没啥用的字段
-            private String remarks  =  ""; /** 备注*/
-            private String sender  =  ""; /** */
-            private String senderName  =  ""; /** */
-            private String description  =  "";
-            private String url  =  "";
-            private String id  =  ""; /** 消息id*/
-            private String kind  =  "";
-            private String kindName  =  "";
-            private String type  =  "";
-            private String method  =  "";
-            private String readTime  =  "";
-            private String status  =  "";
-            private String renderHtml  =  "";
-            private String kindType  =  "";
-            private String handleTime  =  "";
+//            private String remarks  =  ""; /** 备注*/
+//            private String sender  =  ""; /** */
+//            private String senderName  =  ""; /** */
+//            private String description  =  "";
+//            private String url  =  "";
+//            private String id  =  ""; /** 消息id*/
+//            private String kind  =  "";
+//            private String kindName  =  "";
+//            private String type  =  "";
+//            private String method  =  "";
+//            private String readTime  =  "";
+//            private String status  =  "";
+//            private String renderHtml  =  "";
+//            private String kindType  =  "";
+//            private String handleTime  =  "";
 
 
 
@@ -139,69 +118,69 @@ public class MessageListDao extends BaseDao {
                 return showTime;
             }
 
-            public String getRemarks() {
-                return remarks;
-            }
-
-            public String getSender() {
-                return sender;
-            }
-
-            public String getSenderName() {
-                return senderName;
-            }
-
-            public String getDescription() {
-                return description;
-            }
-
-            public String getUrl() {
-                return url;
-            }
-
-            public String getId() {
-                return id;
-            }
-
-            public String getKind() {
-                return kind;
-            }
-
-            public String getKindName() {
-                return kindName;
-            }
-
-            public String getType() {
-                return type;
-            }
-
-            public String getMethod() {
-                return method;
-            }
-
-            public String getReadTime() {
-                return readTime;
-            }
-
-            public String getStatus() {
-                return status;
-            }
-
-            public String getRenderHtml() {
-                return renderHtml;
-            }
-
-            public String getKindType() {
-                return kindType;
-            }
-
-            public String getHandleTime() {
-                return handleTime;
-            }
-
             public String getNotifyId() {
                 return notifyId;
             }
+
+//            public String getRemarks() {
+//                return remarks;
+//            }
+//
+//            public String getSender() {
+//                return sender;
+//            }
+//
+//            public String getSenderName() {
+//                return senderName;
+//            }
+//
+//            public String getDescription() {
+//                return description;
+//            }
+//
+//            public String getUrl() {
+//                return url;
+//            }
+//
+//            public String getId() {
+//                return id;
+//            }
+//
+//            public String getKind() {
+//                return kind;
+//            }
+//
+//            public String getKindName() {
+//                return kindName;
+//            }
+//
+//            public String getType() {
+//                return type;
+//            }
+//
+//            public String getMethod() {
+//                return method;
+//            }
+//
+//            public String getReadTime() {
+//                return readTime;
+//            }
+//
+//            public String getStatus() {
+//                return status;
+//            }
+//
+//            public String getRenderHtml() {
+//                return renderHtml;
+//            }
+//
+//            public String getKindType() {
+//                return kindType;
+//            }
+//
+//            public String getHandleTime() {
+//                return handleTime;
+//            }
         }
     }
 

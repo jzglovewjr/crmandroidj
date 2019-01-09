@@ -140,9 +140,11 @@ public class MessageFragment extends Fragment {
             urlString += "&title=" + searchTitle;
         }
 
-        NetWorkTool.request(urlString, null, PCH.mHttpRequestGet, new MyCallBack<MessageListDao>() {
+       ((TabbarActivity)getContext()).showLoadingView(true);
+        NetWorkTool.request(urlString, null, PCH.mHttpRequestGet,(TabbarActivity)getContext(),false, new MyCallBack<MessageListDao>() {
             @Override
             public void onSuccess( MessageListDao messageListDao, String responseString, Response response ) {
+                ((TabbarActivity)getContext()).showLoadingView(false);
                 Log.d("获取消息列表成功", String.valueOf(messageListDao));
                 if (pageNo == 1){ //下拉
                     mMessageListDao = messageListDao;
@@ -173,7 +175,18 @@ public class MessageFragment extends Fragment {
 
             @Override
             public void onError( String errString, IOException e ) {
-                Log.d("error", errString);
+                ((TabbarActivity)getContext()).showLoadingView(false);
+                Log.d("error", errString
+                );
+
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        //刷新列表并停止loading
+                        messageAdapter.notifyDataSetChanged();
+                        springView.onFinishFreshAndLoad();
+                    }
+                },1);
             }
         });
     }
